@@ -1,0 +1,20 @@
+public class a {
+    public static void main(String[] args) {
+        int i;
+        int j;
+        int c = 0;
+        int arr[] = { 2, 2, 2, 2, 2 };
+        for (i = 0; i < arr.length; i++) {
+            for (j = 1 + i; j < arr.length; j++) {
+                if (arr[i] == arr[j]) {
+                    c = c + 1;
+                }
+            }
+        }
+        if (c != 0) {
+            System.out.println("True");
+        } else {
+            System.out.println("False");
+        }
+    }
+}
